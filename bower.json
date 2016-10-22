@@ -1,0 +1,22 @@
+{
+  "name": "rockband-project",
+  "description": "stream1 project",
+  "main": "index.js",
+  "authors": [
+    "Ca-ananay MAduka"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/caananay/rockband-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
