@@ -1,0 +1,19 @@
+{
+  "name": "rockband-project",
+  "version": "1.0.0",
+  "description": "stream1 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caananay/rockband-project.git"
+  },
+  "author": "Ca-ananay MAduka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caananay/rockband-project/issues"
+  },
+  "homepage": "https://github.com/caananay/rockband-project#readme"
+}
