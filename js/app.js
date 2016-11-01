@@ -1,4 +1,4 @@
-angular.module('RockApp',['ngRoute', 'NavigationBarDirective']);
+angular.module('RockApp',['ngRoute', 'RouteControllers', 'NavigationBarDirective' ]);
 
 angular.module('RockApp').config(function($routeProvider){
 	$routeProvider.when('/',{
@@ -9,6 +9,7 @@ angular.module('RockApp').config(function($routeProvider){
 	}).when('/music',{
 		templateUrl: 'templates/music.html'
 	}).when('/event',{
-		templateUrl: 'templates/event.html'
+		templateUrl: 'templates/event.html',
+		controller: 'AvailController'
 	});
 });

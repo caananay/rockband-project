@@ -1,4 +1,8 @@
  $(document).ready(function(){
+	 
+	 $('#collapseOne').hide();
+	 $('#collapseTwo').hide();
+
 	$("#accordion").click(function(){
 		$("#collapseOne").slideToggle(2000);
 	});

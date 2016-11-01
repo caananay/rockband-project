@@ -2,10 +2,10 @@
 	<h1 style="color: #8c8c8c">Welcome to rockband page</h1>
 </div>
 <div class="hme-panel">
-	<div class="div-panel-btn">
-		<button id="accordion" type="button" class="btn btn-info">Tours and Concerts</button>
-	</div>
-	<div id="collapseOne" class="panel-margin">
+	
+		<button id="accordion" type="button" class="btn btn-info div-panel-btn" ng-model="accordion">Tours and Concerts</button>
+	
+	<div id="collapseOne" class="panel-margin" ng-show="!accordion">
 			
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 		<p>sed do eiusmod empor incididunt ut labore et dolore</p>,  
@@ -13,9 +13,9 @@
 			
 	</div>
 
-	<div class="div-panel-btn">
-		<button id="accordionT" type="button" class="btn btn-info">New Releases</button>
-	</div>
+	
+		<button id="accordionT" type="button" class="btn btn-info div-panel-btn">New Releases</button>
+	
 	<div id="collapseTwo" class="panel-margin">
 			
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
