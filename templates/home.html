@@ -3,9 +3,9 @@
 </div>
 <div class="hme-panel">
 	
-		<button id="accordion" type="button" class="btn btn-info div-panel-btn" ng-model="accordion">Tours and Concerts</button>
+		<button id="accordion" type="button" class="btn btn-info div-panel-btn" onclick="toggle1()">Tours and Concerts</button>
 	
-	<div id="collapseOne" class="panel-margin" ng-show="!accordion">
+	<div id="collapseOne" class="panel-margin collapse">
 			
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 		<p>sed do eiusmod empor incididunt ut labore et dolore</p>,  
@@ -14,9 +14,9 @@
 	</div>
 
 	
-		<button id="accordionT" type="button" class="btn btn-info div-panel-btn">New Releases</button>
+		<button id="accordionT" type="button" class="btn btn-info div-panel-btn" onclick="toggle2()">New Releases</button>
 	
-	<div id="collapseTwo" class="panel-margin">
+	<div id="collapseTwo" class="panel-margin collapse">
 			
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 		<p>sed do eiusmod empor incididunt ut labore et dolore</p>,  
