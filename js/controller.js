@@ -12,7 +12,7 @@ angular.module('RouteControllers', [])
 
 				for (i=0; i<$scope.availDates.length; i++){
 
-					if($scope.caldate.getTime() == $scope.availDates[i].getTime()){
+					if($scope.caldate.getTime() == new Date($scope.availDates[i]).getTime()){
 						//alert ("date available");
 						$scope.availability = "Date is Available";
 					}
