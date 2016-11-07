@@ -10,7 +10,8 @@ angular.module('RouteControllers', [])
 			EventDateService.inputDate(url).then(function(results){
 				$scope.availDates = results.data.aDates;
 
-				for (i=0; i>$scope.availDates.length; i++){
+				for (i=0; i<$scope.availDates.length; i++){
+
 					if($scope.caldate.getTime() == $scope.availDates[i].getTime()){
 						//alert ("date available");
 						$scope.availability = "Date is Available";
