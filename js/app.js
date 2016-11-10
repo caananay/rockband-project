@@ -1,4 +1,4 @@
-angular.module('RockApp',['ngRoute', 'RouteControllers', 'EventService', 'NavigationBarDirective', 'BfooterDirective']);
+angular.module('RockApp',['ngRoute', 'RouteControllers', 'EventService', 'CalenderService', 'NavigationBarDirective', 'BfooterDirective']);
 
 angular.module('RockApp').config(function($routeProvider){
 	$routeProvider.when('/',{

@@ -11,9 +11,10 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<form name="bookingForm" ng-submit="submitForm()" novalidate>
-			<div class="form-group">
+			<div class="form-group" ng-class="{ 'has-error' : bookingForm.date.$pristine }">
 				<label>Pick a Date for your event</label>
 				<input type="date" name="date" class="form-control" ng-model="caldate"><br>
+				<p ng-show="bookingForm.date.$pristine" class="help-block">Choose a Date</p>
 				<button type="button" class="btn btn-info" ng-click="checkAvail()">Check Availability</button>{{availability}}
 				
 			</div>
@@ -21,25 +22,28 @@
 			<div>
 				<p>Book your Event</p>
 			</div>
-			<div class="form-group">
+			<div class="form-group" ng-class="{ 'has-error' : bookingForm.name.$pristine }">
 				<label>Name</label>
-				<input type="text" name="name" class="form-control" required>
-				<p>Your Name is required</p>
+				<input type="text" name="name" class="form-control" ng-model="name" required>
+				<p ng-show="bookingForm.name.$pristine" class="help-block">Your Name is required</p>
 			</div>
-			<div class="form-group">
+			<div class="form-group" ng-class="{ 'has-error' : bookingForm.email.$pristine }">
 				<label>Email</label>
-				<input type="text" name="email" class="form-control" required>
+				<input type="email" name="email" class="form-control" ng-model="email" required>
+				<p ng-show="bookingForm.email.$pristine" class="help-block">Enter a valid Email</p>
 			</div>
-			<div class="form-group">
+			<div class="form-group" ng-class="{ 'has-error' : bookingForm.telephone.$pristine }">
 				<label>Telephone</label>
-				<input type="text" name="telephone" class="form-control" required>
+				<input type="text" name="telephone" class="form-control" ng-model="telephone" required>
+				<p ng-show="bookingForm.telephone.$pristine" class="help-block">Your Telephone is required</p>
 			</div>
-			<div class="form-group">
+			<div class="form-group" ng-class="{ 'has-error' : bookingForm.address.$pristine }">
 				<label>Venue Address</label>
-				<textarea class="form-control" rows="3" required></textarea>
+				<textarea class="form-control" name= "address" rows="3" ng-model="address" required></textarea>
+				<p ng-show="bookingForm.address.$pristine" class="help-block">Your Address is required</p>
 			</div>
 			<div class="form-group">
-				<label>Choosen event date</label>
+				<label>Event date</label>
 				<input type="text" name="eventDate" class="form-control" value="{{caldate.toLocaleDateString()}}" disabled>
 			</div>
 			<button type="Submit" class="btn btn-primary" ng-disabled="bookingForm.$invalid">Submit</button>

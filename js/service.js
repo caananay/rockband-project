@@ -8,45 +8,20 @@ angular.module('EventService', [])
 		};
 		return EventDateService;
 
-	});		
-
-
-
-
-
-/*	.factory('EventDateService', function($scope){
-		
-		EventDateService = {
-
-			inputDate: function(calenderDate, availableDates){
-			
-				for (i=0; i>availableDates.length; i++){
-					if(calenderDate.getTime() == availableDates[i].getTime()){
-						return "date available";
-						//$scope.availability = "Date is Available";
-					}
-					else{
-						return "date not available";
-
-						//$scope.availability = "Date is not Available";
-					};
-				
-				};
-			
-			}
-		};
-	return EventDateService;		
-		
 	});
 
-	/*EventDateService = {
-			inputDate: function($scope.caldate, $scope.availDates[i]){
-
-				if ($scope.caldate.getTime() == $scope.availDates[0].getTime() || $scope.caldate.getTime() == $scope.availDates[1].getTime()){
-					$scope.eventdate = $scope.caldate;
-					return $scope.eventdate;
+angular.module('CalenderService', [])
+	.factory('CalenderDateService', function(){
+		
+		CalenderDateService = {
+			checkDate: function(caldate, availDates){
+				for (i = 0; i<availDates.length; i++) {
+					if(caldate.getTime() == new Date(availDates[i]).getTime()){
+						return "Date is Available";
+					}
 				}
-				
+				return "Date is not Available";
 			}
-		};
-		return EventDateService;*/
+		}
+			return CalenderDateService;
+		});
