@@ -65,6 +65,10 @@ body{
 	color: #0088cc;
 }
 
+audio{
+	width: 200px;
+}
+
 a:hover{
 	text-decoration: none;
 }
@@ -75,6 +79,10 @@ a:hover{
 
 .position-rel{
 	position: relative;
+	background-image:url(../images/monkees.jpg);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 700px;
 }
 
 .homepage-background{
@@ -96,6 +104,7 @@ a:hover{
 	background-color: #fff;
 	top: -200px;
 	left: 20%;
+	margin-bottom: 0px;
 }
 
 .justfied{
@@ -226,15 +235,25 @@ footer{
 
 @media screen and (max-width: 765px) {
 
+	
+	audio{
+		width: 180px;
+		display: block;
+	}
+
+	video{
+		width: 300px;
+	}
+
 	footer{
 	width: 100%;
 	height: 400px;
 	padding-top: 10px;
-}
+	}
 
-.footer-align-left{
+	.footer-align-left{
 	text-align: left;
-}
+	}
 	.footer{
 	margin-top: 20px;
 	width: 80%;
