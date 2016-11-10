@@ -20,7 +20,7 @@ body{
   }
 
 .modal-content{
-	background-image: url(../images/cover1.jpg);
+	background-image: url(../images/bg2.jpg);
 	background-size: 100% 100%;
 
 }
@@ -108,16 +108,20 @@ a:hover{
 	padding: 10px;
 }
 
-.div-resize{
+/*.div-resize{
 	width: 600px;
-}
+}*/
+
+.col-md-6 {
+    width: 49.3%;
+  }
 
 .div-margint{
 	margin-top: 15px;
 }
 
 .div-marginl{
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 .hme-panel{
@@ -144,9 +148,11 @@ a:hover{
 	margin-right: 25px;
 	padding: 10px;
 	width: 50%;
+	height: 100px;
 	left: 50%;
 	background-color: #fff;
 	border-radius: 10px;
+	overflow: scroll;
 	/*border: 1px solid red;*/
 }
 
