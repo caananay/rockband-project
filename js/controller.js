@@ -1,7 +1,7 @@
 angular.module('RouteControllers', [])
 	.controller('AvailController', function($scope, EventDateService, CalenderDateService){
 		
-		
+		$scope.emailFormat = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;
 		var url = "../data/availDates.json";
 		
 		
