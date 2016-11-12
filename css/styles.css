@@ -104,7 +104,6 @@ a:hover{
 	background-color: #fff;
 	top: -200px;
 	left: 20%;
-	margin-bottom: 0px;
 }
 
 .justfied{
@@ -117,18 +116,11 @@ a:hover{
 	padding: 10px;
 }
 
-/*.div-resize{
-	width: 600px;
-}
-.col-md-6 {
-    width: 49.3%;
-  	}
+/*
 .div-marginl{
 	margin-left: 15px;
 }
  */
-
-
 
 .div-margint{
 	margin-top: 15px;
@@ -220,9 +212,11 @@ footer{
 	padding-top: 250px;
 	
 	}
-	/*.col-md-6 {
-    width: 49.3%;
-  	}*/
+	.contactForm{
+	width: 100%;
+	position: static;
+	margin-top: 10px;
+	}
 
 	audio{
 		width: 180px;
