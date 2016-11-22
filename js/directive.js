@@ -1,7 +1,8 @@
-angular.module('NavigationBarDirective', []).directive('navigation', function(){
+angular.module('NavigationBarDirective', ['RouteControllers']).directive('navigation', function(){
 	return {
 		restrict: 'E', //E-> element
-		templateUrl: 'templates/directives/navigation-bar.html'
+		templateUrl: 'templates/directives/navigation-bar.html',
+		controller: 'NavController'
 	};
 });
 

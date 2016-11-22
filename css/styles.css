@@ -7,6 +7,16 @@ body{
 	background: linear-gradient(45deg, #75a3a3, #fff);
 }
 
+/*.navbar-default .navbar-nav > li > a {
+ color: #ccccff;
+ font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+   color: #ccccff;
+ font-weight: bold;
+}*/
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
    color: #cccc00;
@@ -45,10 +55,6 @@ body{
 	border-radius: 0px 20px 0px 20px;
 }
 
-.hide-accordion{
-	display: none;
-}
-
 .itunes{
 	background-color: #bfbfbf;
 	color: #1a1a1a;
@@ -82,15 +88,19 @@ a:hover{
 	background-image:url(../images/monkees.jpg);
 	background-size: 100% 100%;
 	width: 100%;
-	height: 700px;
+	height: 710px;
+	margin-top: 10px;
 }
 
 .homepage-background{
-	background-image:url(../images/monkees.jpg);
+	/*background-image:url(../images/monkees.jpg);*/
+	background-image:url(../images/monkees.gif);
 	background-size: 100% 100%;
+	background-attachment: fixed;
 }
 
 .homepage{
+	margin-top: 10px;
 	width: 100%;
 	height: 552px;
 }
@@ -209,7 +219,7 @@ footer{
 @media screen and (max-width: 765px) {
 
 	body{
-	padding-top: 250px;
+	padding-top: 170px;
 	
 	}
 	.contactForm{

@@ -2,8 +2,8 @@ angular.module('RockApp',['ngRoute', 'RouteControllers', 'EventService', 'Calend
 
 angular.module('RockApp').config(function($routeProvider){
 	$routeProvider.when('/',{
-		templateUrl: 'templates/home.html'
-		//controller: 'HomeController'
+		templateUrl: 'templates/home.html',
+		controller: 'HomeController'
 	}).when('/band',{
 		templateUrl: 'templates/band.html'
 	}).when('/music',{
