@@ -1,5 +1,11 @@
 body, p, h1, h2, h3, h3, h5, h6{
-	font-family: 'Indie Flower', cursive, sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6em;
 }
 
 body{
@@ -7,9 +13,8 @@ body{
 	background: linear-gradient(45deg, #75a3a3, #fff);
 }
 
-.navbar-text-color {
-   color: #ccccff;
- font-weight: bold;
+.band {
+	height: 350px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -23,7 +28,11 @@ body{
   	background-color:rgba(34,34,34,0.9);
 
   }
-
+	.nav-color-add #myCollapsingList li > a,
+	.nav-color-add a.navbar-brand {
+	     color: #ccccff ;
+	     font-weight: bold;
+	}
 .modal-content{
 	background-image: url(../images/bg2.jpg);
 	background-size: 100% 100%;
@@ -88,7 +97,6 @@ a:hover{
 }
 
 .homepage-background{
-	/*background-image:url(../images/monkees.jpg);*/
 	background-image:url(../images/monkees.gif);
 	background-size: 100% 100%;
 	background-attachment: fixed;
@@ -121,34 +129,21 @@ a:hover{
 	padding: 10px;
 }
 
-/*
-.div-marginl{
-	margin-left: 15px;
-}
- */
-
 .div-margint{
 	margin-top: 15px;
 }
-
-
 
 .hme-panel{
 	position: absolute;
 	top: 60%;
 	right: 3%;
-	/*top: 400px;
-	left: 915px;*/
 	width: 65%;
-	/*z-index: 1;*/
-	/*border: 1px solid red;*/
+	
 }
 .div-panel-btn{
 	position: relative;
-	/*left: 120px;*/
 	left: 50%;
 	margin-top: 10px;
-	/*border: 1px solid red;*/
 	width: 50%;
 }
 .panel-margin{
