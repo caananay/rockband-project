@@ -25,3 +25,6 @@ Javascript/jQeury was used to add functionalities to the page such as
  - changing the navigation bar color on scroll
  - toggling infomation button on the home page
  - checking if band is available for a gig on date chosen by a potential customer (date availability is checked against a date object loaded via a JSON data file 
+
+ISSUES DEBUGGED
+Initially to check available calendar dates in the service.js file i used the getTime() function to check that the calender date and the available date specified in the availDates.json file was equal, this worked fine but months later after the daylight savings changed and because of +1hr change in clock it no longer matched. To correct this I used toDateString() to match just the dates.
