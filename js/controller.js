@@ -14,22 +14,28 @@ angular.module('RouteControllers', [])
 
 	 })	 
 
-
-
-	.controller('NavController', function(){
+	.controller('NavController', function($scope){
 		$(window).scroll(function() {
 			if ($(document).scrollTop() > 150) {
 				$(".navbar").addClass("nav-color-add");
 			} else {
 				$(".navbar").removeClass("nav-color-add");
 			}
-		})
+		});
+
+		$scope.updateForm = function(){
+			if($scope.signupForm.$valid){
+				alert("Sign up successful");
+				$('#newsletterSignUp').modal('hide');	
+			}
+			else{
+				alert("Please complete the form.");
+			}
+		}
 
 	})
 
-			
-
-	.controller('AvailController', function($scope, EventDateService, CalenderDateService){
+	.controller('AvailController', function($scope, $route, EventDateService, CalenderDateService){
 		
 		$scope.emailFormat = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;
 		var url = "data/availDates.json";
@@ -44,15 +50,15 @@ angular.module('RouteControllers', [])
 						
 
 			}).catch(function(err){
-					console.log(err);
+				console.log(err);
 			});
 
-			
 		};
-
+		
 		$scope.submitForm = function(){
 			if($scope.bookingForm.$valid){
 				alert("Booking successfully submitted");
+				$route.reload();
 			}
 			else{
 				alert("Please complete the form.");

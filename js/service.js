@@ -16,7 +16,7 @@ angular.module('CalenderService', [])
 		CalenderDateService = {
 			checkDate: function(caldate, availDates){
 				for (i = 0; i<availDates.length; i++) {
-					if(caldate.getTime() == new Date(availDates[i]).getTime()){
+					if(caldate.toDateString() == new Date(availDates[i]).toDateString()){
 						return "Date is Available";
 					}
 				}
@@ -24,4 +24,4 @@ angular.module('CalenderService', [])
 			}
 		}
 			return CalenderDateService;
-		});
+	});
