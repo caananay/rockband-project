@@ -45,3 +45,7 @@
    4. User should be able to share music page on facebook or twitter.
 
    5. User should be able to play audio and video files embeded in website.
+
+   6. When booking the band, booking form submit button is enable only when form is filled.
+
+   7. Validate form fields for booking form.
