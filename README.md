@@ -33,7 +33,7 @@
 
 ### TESTING/ISSUES DEBUGGED
  
-    Initially to check available calendar dates in the service.js file i used the getTime() function to check that the calender date and the available date specified in the availDates.json file was equal, this worked fine but months later after the daylight savings changed and because of +1hr change in clock it no longer matched. To correct this I used toDateString() to match just the dates.
+   Initially to check available calendar dates in the service.js file i used the getTime() function to check that the calender date and the available date specified in the availDates.json file was equal, this worked fine but months later after the daylight savings changed and because of +1hr change in clock it no longer matched. To correct this I used toDateString() to match just the dates.
 
 #### TEST SCENARIOS
    1. Responsiveness of website across some devices (laptops, ipad and samsung note3) and major browsers.
